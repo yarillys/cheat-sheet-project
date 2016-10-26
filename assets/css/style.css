@@ -10,3 +10,36 @@ section {
      h2.red-text {
        font-size: 100px;
      }
+     header > h3 {
+       display: inline-block;
+       margin: 0 ;
+     }
+    header > nav {
+    float: right;
+    }
+
+    header > nav > ul li {
+      float: left;
+      margin: 0 10px;
+      list-style: none;
+    }
+
+  header {
+          background-color: #ff7fcb;
+          padding: 10px 15px;
+      }
+
+  header > nav > ul li > a {
+      color: #333;
+      text-decoration: none;
+      font-family: helvetica, arial;
+      }
+
+  body {
+          margin: 0;
+      }
+
+  header > nav > ul {
+      padding: 0;
+      margin: 0;
+      }
