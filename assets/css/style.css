@@ -1,5 +1,5 @@
 section {
-       background-color: green;
+       background-color: #eee;
      }
      #text-section {
        background-color: blue;
@@ -7,39 +7,106 @@ section {
      .red-text {
        color: red;
      }
-     h2.red-text {
+h2.red-text {
        font-size: 100px;
      }
-     header > h3 {
+
+header { position: fixed;
+         width: 100%;
+}
+
+header > h3,
+footer > h5 {
        display: inline-block;
        margin: 0 ;
      }
-    header > nav {
+
+header > nav,
+footer > nav {
     float: right;
+    margin-right: 15px;
     }
 
-    header > nav > ul li {
+header > nav > ul,
+footer > nav > ul {
+          padding: 0;
+          margin: 0;
+          }
+
+header > nav > ul li,
+footer > nav> ul li {
       float: left;
       margin: 0 10px;
       list-style: none;
-    }
+      }
 
-  header {
+header,
+footer {
           background-color: #ff7fcb;
           padding: 10px 15px;
-      }
+          font-family: fantasy;
+        }
 
-  header > nav > ul li > a {
+header > nav > ul li > a,
+footer > nav > ul li > a {
       color: #333;
       text-decoration: none;
-      font-family: helvetica, arial;
+      font-family: helvetica, sans-serif;
       }
 
-  body {
+body {
           margin: 0;
       }
 
-  header > nav > ul {
-      padding: 0;
-      margin: 0;
-      }
+aside {
+    float: left;
+    width: 20%;
+    margin-top: 40px;
+    position: fixed;
+  }
+
+main {
+    float: right;
+    width: calc(80% - 60px);
+    background-color: #f7f7f7;
+    padding: 0 30px;
+    margin-top: 42px;
+    margin-left: 20%;
+
+  }
+
+main > section {
+  margin-bottom: 60px;
+}
+
+footer {
+    clear: both;
+    background-color: #ffb6c1
+
+}
+aside > ol li > a {
+    text-decoration: none;
+    color: #333;
+    font-family: sans-serif;
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .4s;
+    }
+
+aside > ol > li {
+    list-style: none;
+    margin-bottom: 30px;
+    }
+
+aside > ol li > a:hover {
+    background-color: aquamarine;
+    }
+
+aside > ol {
+    padding: 0;
+  }
